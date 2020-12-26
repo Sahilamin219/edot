@@ -1,0 +1,70 @@
+
+
+$color_default: getPaletteKey(default);
+$color_light: getPaletteKey(light);
+$color_medium: getPaletteKey(medium);
+$color_dark: getPaletteKey(dark);
+$color_active: getPaletteKey(active);
+$color_active_light: getPaletteKey(active_light);
+$color_active_medium: getPaletteKey(active_medium);
+$color_active_dark: getPaletteKey(active_dark);
+$color_dark_grey: getPaletteKey(dark_grey);
+$color_light_grey: getPaletteKey(light_grey);
+
+$background_images_cart: url(getPaletteKey(bg_image_cart));
+
+$font_size_small: 18px;
+$font_size_xxlarge: 64px;
+$font_size_xlarge: 48px;
+$font_size_large: 32px;
+$font_size_medium: 24px;
+$font_size_regular: 20px;
+$font_size_small: 16px;
+
+$font_family_primairy: 'Open Sans', sans-serif;
+$font_family_secondary: 'Lato', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+// Global styles
+@import "imports/reset";
+@import "imports/mixins";
+@import "imports/spacing";
+@import "imports/fonts";
+@import "imports/links";
+@import "imports/buttons";
+
+// Components
+@import "imports/nav";
+@import "imports/content";
+@import "imports/product_grid";
+@import "imports/product";
+@import "imports/store";
+@import "imports/bulletpoints_section";
+@import "imports/page";
+@import "imports/hero";
+@import "imports/faq";
+@import "imports/hamburger";
+@import "imports/static_header";
+@import "imports/quotes";
+@import "imports/footer";
+@import "imports/promo";
+@import "imports/snipcart";

@@ -1,0 +1,59 @@
+.hero {
+    background-color: $color_dark;
+    width: 100%;
+    margin-top: -101px;
+    padding-top: 282px;
+    padding-bottom: 350px;
+    margin-bottom: -200px;
+    position: relative;
+
+    @include smaller-than-max-width {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include smaller-than-tablet {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+        font-family: $font_family_primairy;
+        color: white;
+        position: relative;
+
+        h1 {
+            color: $color_default;
+            margin: 0 auto 15px;
+            max-width: 720px;
+            font-size: $spacing--unit*8;
+            font-weight: 900;
+            @include smaller-than-tablet { font-size: $font_size_large; }
+        }
+    }
+
+    &__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .link-group {
+        margin-top: $spacing--unit*10;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+}
